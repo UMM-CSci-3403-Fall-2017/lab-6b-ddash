@@ -3,10 +3,10 @@ package xrate;
 /**
  * Provide access to basic currency exchange rate services.
  * 
- * @author PUT YOUR TEAM NAME HERE
+ * @author Danish Malik and Kyle DeBates
  */
 public class ExchangeRateReader {
-
+    private final String baseURL;
     /**
      * Construct an exchange rate reader using the given base URL. All requests
      * will then be relative to that URL. If, for example, your source is Xavier
@@ -19,7 +19,7 @@ public class ExchangeRateReader {
      *            the base URL for requests
      */
     public ExchangeRateReader(String baseURL) {
-        // TODO Your code here
+        this.baseURL = baseURL;
     }
 
     /**
